@@ -1,0 +1,7 @@
+# =======================
+# File: requirements.txt
+# =======================
+watchdog
+openpyxl
+python-dotenv
+requests

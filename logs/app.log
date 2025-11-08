@@ -1,0 +1,290 @@
+2025-10-11 23:45:32,448 INFO Saved folder paths: ['C:\\Moe\\Dokumenti\\Radni nalozi\\Zagreb\\Petrova']
+2025-10-11 23:45:32,455 INFO Started watching C:\Moe\Dokumenti\Radni nalozi\Zagreb\Petrova
+2025-10-11 23:45:48,949 INFO New xlsx detected: C:\Moe\Dokumenti\Radni nalozi\Zagreb\Petrova\Vortex + Anesteziologija 5319 preventivni - Copy.xlsx
+2025-10-11 23:45:48,952 INFO Processing file: C:\Moe\Dokumenti\Radni nalozi\Zagreb\Petrova\Vortex + Anesteziologija 5319 preventivni - Copy.xlsx
+2025-10-11 23:45:49,005 INFO Extracted RN=0165/2025, date=10.10.2025.
+2025-10-11 23:45:50,532 INFO Current server number: 165
+2025-10-11 23:46:15,009 INFO Info sent to telegram.
+2025-10-11 23:46:15,017 INFO Wrote temp_number.txt -> temp_number.txt
+2025-10-11 23:46:19,976 INFO Uploaded temp_number.txt to FTP as /public_html/MMrnals/data.txt
+2025-10-11 23:55:28,817 INFO Shutting down observers...
+2025-10-11 23:55:28,819 INFO Shutdown complete.
+2025-10-11 23:56:34,502 INFO Started watching C:\Moe\Dokumenti\Radni nalozi\Zagreb\Petrova
+2025-10-11 23:57:00,311 INFO New xlsx detected: C:\Moe\Dokumenti\Radni nalozi\Zagreb\Petrova\Vortex + Anesteziologija 5319 preventivni - Copy.xlsx
+2025-10-11 23:57:00,315 WARNING File C:\Moe\Dokumenti\Radni nalozi\Zagreb\Petrova\Vortex + Anesteziologija 5319 preventivni - Copy.xlsx locked; retrying (1/5)...
+2025-10-11 23:57:01,367 INFO Extracted RN=0165/2025, date=10.10.2025.
+2025-10-11 23:57:04,410 INFO Current server number: 165
+2025-10-11 23:57:05,350 INFO Sent Telegram info message
+2025-10-11 23:57:06,180 INFO Uploaded temp_number.txt to FTP as /public_html/MMrnals/data.txt
+2025-10-11 23:57:06,650 INFO Sent Telegram info message (waiting for user reply...)
+2025-10-11 23:57:52,219 INFO Shutdown complete.
+2025-10-12 00:01:35,785 INFO Started watching C:\Moe\Dokumenti\Radni nalozi\Zagreb\Petrova
+2025-10-12 00:01:44,283 INFO New xlsx detected: C:\Moe\Dokumenti\Radni nalozi\Zagreb\Petrova\Vortex + Anesteziologija 5319 preventivni - Copy - Copy.xlsx
+2025-10-12 00:01:44,285 INFO Processing file: C:\Moe\Dokumenti\Radni nalozi\Zagreb\Petrova\Vortex + Anesteziologija 5319 preventivni - Copy - Copy.xlsx
+2025-10-12 00:01:44,286 WARNING File C:\Moe\Dokumenti\Radni nalozi\Zagreb\Petrova\Vortex + Anesteziologija 5319 preventivni - Copy - Copy.xlsx locked; retrying (1/5)...
+2025-10-12 00:01:45,351 INFO Extracted RN=0165/2025, date=10.10.2025.
+2025-10-12 00:01:46,923 INFO Current server number: 165
+2025-10-12 00:01:48,792 INFO Info sent to telegram.
+2025-10-12 00:01:48,799 INFO Wrote temp_number.txt -> temp_number.txt
+2025-10-12 00:01:49,493 INFO Uploaded temp_number.txt to FTP as /public_html/MMrnals/data.txt
+2025-10-12 00:02:39,945 INFO Shutdown complete.
+2025-10-12 00:03:12,383 INFO Started watching C:\Moe\Dokumenti\Radni nalozi\Zagreb\Petrova
+2025-10-12 00:03:21,504 INFO New xlsx detected: C:\Moe\Dokumenti\Radni nalozi\Zagreb\Petrova\Vortex + Anesteziologija 5319 preventivni - Copy - Copy - Copy.xlsx
+2025-10-12 00:03:21,505 WARNING File C:\Moe\Dokumenti\Radni nalozi\Zagreb\Petrova\Vortex + Anesteziologija 5319 preventivni - Copy - Copy - Copy.xlsx locked; retrying (1/5)...
+2025-10-12 00:03:22,582 INFO Extracted RN=0165/2025, date=10.10.2025.
+2025-10-12 00:03:24,708 INFO Current server number: 165
+2025-10-12 00:03:26,367 INFO Sent Telegram info message
+2025-10-12 00:03:27,286 INFO Uploaded temp_number.txt to FTP as /public_html/MMrnals/data.txt
+2025-10-12 00:03:27,860 INFO Sent Telegram info message (waiting for user reply...)
+2025-10-12 00:06:09,711 INFO Shutdown complete.
+2025-10-12 00:07:05,368 INFO Started watching C:\Moe\Dokumenti\Radni nalozi\Zagreb\Petrova
+2025-10-12 00:07:16,737 INFO New xlsx detected: C:\Moe\Dokumenti\Radni nalozi\Zagreb\Petrova\Vortex + Anesteziologija 5319 preventivni - Copy.xlsx
+2025-10-12 00:07:16,799 INFO Extracted RN=0165/2025, date=10.10.2025.
+2025-10-12 00:07:18,803 INFO Current server number: 165
+2025-10-12 00:07:20,969 INFO Sent Telegram info message
+2025-10-12 00:07:22,548 INFO Uploaded temp_number.txt to FTP as /public_html/MMrnals/data.txt
+2025-10-12 00:07:23,120 INFO Sent Telegram info message (waiting for user reply...)
+2025-10-12 00:09:03,051 INFO Shutdown complete.
+2025-10-12 00:09:05,923 INFO Started watching C:\Moe\Dokumenti\Radni nalozi\Zagreb\Petrova
+2025-10-12 00:09:21,417 INFO New xlsx detected: C:\Moe\Dokumenti\Radni nalozi\Zagreb\Petrova\Vortex + Anesteziologija 5319 preventivni - Copy - Copy.xlsx
+2025-10-12 00:09:21,419 INFO Processing file: C:\Moe\Dokumenti\Radni nalozi\Zagreb\Petrova\Vortex + Anesteziologija 5319 preventivni - Copy - Copy.xlsx
+2025-10-12 00:09:21,503 INFO Extracted RN=0165/2025, date=10.10.2025.
+2025-10-12 00:09:23,041 INFO Current server number: 165
+2025-10-12 00:09:24,528 INFO Info sent to telegram.
+2025-10-12 00:09:24,534 INFO Wrote temp_number.txt -> temp_number.txt
+2025-10-12 00:09:26,170 INFO Uploaded temp_number.txt to FTP as /public_html/MMrnals/data.txt
+2025-10-12 00:11:34,417 INFO Shutdown complete.
+2025-10-12 00:11:41,838 INFO Started watching C:\Moe\Dokumenti\Radni nalozi\Zagreb\Petrova
+2025-10-12 00:11:59,500 INFO New xlsx detected: C:\Moe\Dokumenti\Radni nalozi\Zagreb\Petrova\Vortex + Anesteziologija 5319 preventivni - Copy (2).xlsx
+2025-10-12 00:11:59,509 INFO New xlsx detected: C:\Moe\Dokumenti\Radni nalozi\Zagreb\Petrova\Vortex + Anesteziologija 5319 preventivni - Copy - Copy - Copy.xlsx
+2025-10-12 00:11:59,511 WARNING File C:\Moe\Dokumenti\Radni nalozi\Zagreb\Petrova\Vortex + Anesteziologija 5319 preventivni - Copy - Copy - Copy.xlsx locked; retrying (1/5)...
+2025-10-12 00:11:59,566 INFO Extracted RN=0165/2025, date=10.10.2025.
+2025-10-12 00:12:00,508 INFO Current server number: 165
+2025-10-12 00:12:00,570 INFO Extracted RN=0165/2025, date=10.10.2025.
+2025-10-12 00:12:02,025 INFO Sent Telegram info message
+2025-10-12 00:12:02,439 INFO Current server number: 165
+2025-10-12 00:12:03,677 INFO Uploaded temp_number.txt to FTP as /public_html/MMrnals/data.txt
+2025-10-12 00:12:03,881 INFO Sent Telegram info message
+2025-10-12 00:12:04,468 INFO Sent Telegram info message (waiting for user reply...)
+2025-10-12 00:12:04,847 INFO Uploaded temp_number.txt to FTP as /public_html/MMrnals/data.txt
+2025-10-12 00:12:05,332 INFO Sent Telegram info message (waiting for user reply...)
+2025-10-12 00:12:43,013 INFO New xlsx detected: C:\Moe\Dokumenti\Radni nalozi\Zagreb\Petrova\~$Vortex + Anesteziologija 5319 preventivni - Copy - Copy.xlsx
+2025-10-12 00:12:43,014 WARNING File C:\Moe\Dokumenti\Radni nalozi\Zagreb\Petrova\~$Vortex + Anesteziologija 5319 preventivni - Copy - Copy.xlsx locked; retrying (1/5)...
+2025-10-12 00:12:44,016 WARNING File C:\Moe\Dokumenti\Radni nalozi\Zagreb\Petrova\~$Vortex + Anesteziologija 5319 preventivni - Copy - Copy.xlsx locked; retrying (2/5)...
+2025-10-12 00:12:46,023 WARNING File C:\Moe\Dokumenti\Radni nalozi\Zagreb\Petrova\~$Vortex + Anesteziologija 5319 preventivni - Copy - Copy.xlsx locked; retrying (3/5)...
+2025-10-12 00:12:49,024 WARNING File C:\Moe\Dokumenti\Radni nalozi\Zagreb\Petrova\~$Vortex + Anesteziologija 5319 preventivni - Copy - Copy.xlsx locked; retrying (4/5)...
+2025-10-12 00:12:53,026 WARNING File C:\Moe\Dokumenti\Radni nalozi\Zagreb\Petrova\~$Vortex + Anesteziologija 5319 preventivni - Copy - Copy.xlsx locked; retrying (5/5)...
+2025-10-12 00:12:58,027 ERROR Error processing file C:\Moe\Dokumenti\Radni nalozi\Zagreb\Petrova\~$Vortex + Anesteziologija 5319 preventivni - Copy - Copy.xlsx: [Errno 13] Permission denied: 'C:\\Moe\\Dokumenti\\Radni nalozi\\Zagreb\\Petrova\\~$Vortex + Anesteziologija 5319 preventivni - Copy - Copy.xlsx'
+Traceback (most recent call last):
+  File "C:\Moe\Python\LastRnalNumberV2\processor.py", line 74, in process_file
+    wb = safe_load_excel(file_path)
+  File "C:\Moe\Python\LastRnalNumberV2\processor.py", line 54, in safe_load_excel
+    raise last_exc
+  File "C:\Moe\Python\LastRnalNumberV2\processor.py", line 44, in safe_load_excel
+    wb = openpyxl.load_workbook(path, data_only=True)
+  File "C:\Users\darkomajetic\AppData\Local\Programs\Python\Python313\Lib\site-packages\openpyxl\reader\excel.py", line 346, in load_workbook
+    reader = ExcelReader(filename, read_only, keep_vba,
+                         data_only, keep_links, rich_text)
+  File "C:\Users\darkomajetic\AppData\Local\Programs\Python\Python313\Lib\site-packages\openpyxl\reader\excel.py", line 123, in __init__
+    self.archive = _validate_archive(fn)
+                   ~~~~~~~~~~~~~~~~~^^^^
+  File "C:\Users\darkomajetic\AppData\Local\Programs\Python\Python313\Lib\site-packages\openpyxl\reader\excel.py", line 95, in _validate_archive
+    archive = ZipFile(filename, 'r')
+  File "C:\Users\darkomajetic\AppData\Local\Programs\Python\Python313\Lib\zipfile\__init__.py", line 1367, in __init__
+    self.fp = io.open(file, filemode)
+              ~~~~~~~^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: 'C:\\Moe\\Dokumenti\\Radni nalozi\\Zagreb\\Petrova\\~$Vortex + Anesteziologija 5319 preventivni - Copy - Copy.xlsx'
+2025-10-12 00:13:31,697 INFO New xlsx detected: C:\Moe\Dokumenti\Radni nalozi\Zagreb\Petrova\Vortex + Anesteziologija 5319 preventivni - Copy - Copy - Copy (2).xlsx
+2025-10-12 00:13:31,698 WARNING File C:\Moe\Dokumenti\Radni nalozi\Zagreb\Petrova\Vortex + Anesteziologija 5319 preventivni - Copy - Copy - Copy (2).xlsx locked; retrying (1/5)...
+2025-10-12 00:13:32,734 INFO Extracted RN=0163/2025, date=10.10.2025.
+2025-10-12 00:13:36,713 INFO Current server number: 165
+2025-10-12 00:13:37,490 INFO Sent Telegram info message
+2025-10-12 00:13:38,456 INFO Uploaded temp_number.txt to FTP as /public_html/MMrnals/data.txt
+2025-10-12 00:13:38,888 INFO Sent Telegram info message (waiting for user reply...)
+2025-10-12 00:16:03,968 INFO New xlsx detected: C:\Moe\Dokumenti\Radni nalozi\Zagreb\Petrova\Vortex + Anesteziologija 5319 preventivni - Copy - Copy - Copy (2) - Copy.xlsx
+2025-10-12 00:16:03,969 WARNING File C:\Moe\Dokumenti\Radni nalozi\Zagreb\Petrova\Vortex + Anesteziologija 5319 preventivni - Copy - Copy - Copy (2) - Copy.xlsx locked; retrying (1/5)...
+2025-10-12 00:16:05,014 INFO Extracted RN=0163/2025, date=10.10.2025.
+2025-10-12 00:16:08,179 INFO Current server number: 163
+2025-10-12 00:16:09,080 INFO Sent Telegram info message
+2025-10-12 00:16:10,574 INFO Uploaded temp_number.txt to FTP as /public_html/MMrnals/data.txt
+2025-10-12 00:16:11,024 INFO Sent Telegram info message (waiting for user reply...)
+2025-10-12 00:17:20,150 INFO Shutdown complete.
+2025-10-12 00:28:51,552 INFO Started watching C:\Moe\Dokumenti\Radni nalozi\Zagreb\Petrova
+2025-10-12 00:29:04,276 INFO New xlsx detected: C:\Moe\Dokumenti\Radni nalozi\Zagreb\Petrova\Vortex + Anesteziologija 5319 preventivni - Copy - Copy - Copy (2) - Copy - Copy.xlsx
+2025-10-12 00:29:04,278 WARNING File C:\Moe\Dokumenti\Radni nalozi\Zagreb\Petrova\Vortex + Anesteziologija 5319 preventivni - Copy - Copy - Copy (2) - Copy - Copy.xlsx locked; retrying (1/5)...
+2025-10-12 00:29:05,338 INFO Extracted RN=0163/2025, date=10.10.2025.
+2025-10-12 00:29:07,639 INFO Current server number: 163
+2025-10-12 00:29:07,640 INFO Waiting for user confirmation...
+2025-10-12 00:29:09,656 INFO Sent Telegram info message
+2025-10-12 00:29:09,658 INFO User confirmed, proceeding with file upload.
+2025-10-12 00:29:10,398 INFO Uploaded temp_number.txt to FTP as /public_html/MMrnals/data.txt
+2025-10-12 00:29:10,982 INFO Sent Telegram info message (waiting for user reply...)
+2025-10-12 00:32:06,730 INFO Shutdown complete.
+2025-10-12 00:32:09,765 INFO Started watching C:\Moe\Dokumenti\Radni nalozi\Zagreb\Petrova
+2025-10-12 00:32:15,260 INFO New xlsx detected: C:\Moe\Dokumenti\Radni nalozi\Zagreb\Petrova\Vortex + Anesteziologija 5319 preventivni - Copy - Copy - Copy (2) - Copy - Copy - Copy.xlsx
+2025-10-12 00:32:15,261 WARNING File C:\Moe\Dokumenti\Radni nalozi\Zagreb\Petrova\Vortex + Anesteziologija 5319 preventivni - Copy - Copy - Copy (2) - Copy - Copy - Copy.xlsx locked; retrying (1/5)...
+2025-10-12 00:32:16,299 INFO Extracted RN=0163/2025, date=10.10.2025.
+2025-10-12 00:32:18,216 INFO Current server number: 163
+2025-10-12 00:32:18,217 INFO Waiting for user confirmation...
+2025-10-12 00:32:30,501 INFO Sent Telegram info message
+2025-10-12 00:32:30,502 INFO User confirmed, proceeding with file upload.
+2025-10-12 00:32:31,290 INFO Uploaded temp_number.txt to FTP as /public_html/MMrnals/data.txt
+2025-10-12 00:32:31,737 INFO Sent Telegram info message (waiting for user reply...)
+2025-10-12 00:32:53,861 INFO Shutdown complete.
+2025-10-12 00:38:09,111 INFO Started watching C:\Moe\Dokumenti\Radni nalozi\Zagreb\Petrova
+2025-10-12 00:38:41,669 INFO New xlsx detected: C:\Moe\Dokumenti\Radni nalozi\Zagreb\Petrova\Vortex + Anesteziologija 5319 preventivni - C - Copy.xlsx
+2025-10-12 00:38:41,672 WARNING File C:\Moe\Dokumenti\Radni nalozi\Zagreb\Petrova\Vortex + Anesteziologija 5319 preventivni - C - Copy.xlsx locked; retrying (1/5)...
+2025-10-12 00:38:42,713 INFO Extracted RN=0163/2025, date=10.10.2025.
+2025-10-12 00:38:44,359 INFO Current server number: 163
+2025-10-12 00:38:44,360 INFO Waiting for user confirmation...
+2025-10-12 00:38:44,360 INFO Waiting for user confirmation...
+2025-10-12 00:38:44,925 INFO Sent Telegram info message (waiting for user reply...)
+2025-10-12 00:38:55,370 INFO Sent Telegram info message
+2025-10-12 00:38:55,371 INFO File processing was cancelled or timed out.
+2025-10-12 00:38:55,599 INFO Sent Telegram info message
+2025-10-12 00:40:10,638 INFO New xlsx detected: C:\Moe\Dokumenti\Radni nalozi\Zagreb\Petrova\Vortex + Anesteziologija 5319 preventivni - Copy.xlsx
+2025-10-12 00:40:10,642 WARNING File C:\Moe\Dokumenti\Radni nalozi\Zagreb\Petrova\Vortex + Anesteziologija 5319 preventivni - Copy.xlsx locked; retrying (1/5)...
+2025-10-12 00:40:11,698 INFO Extracted RN=0165/2025, date=10.10.2025.
+2025-10-12 00:40:13,642 INFO Current server number: 163
+2025-10-12 00:40:13,644 INFO Waiting for user confirmation...
+2025-10-12 00:40:13,644 INFO User confirmed, proceeding with file upload.
+2025-10-12 00:40:15,070 INFO Uploaded temp_number.txt to FTP as /public_html/MMrnals/data.txt
+2025-10-12 00:40:15,870 INFO Sent Telegram info message
+2025-10-12 00:40:58,354 INFO Shutdown complete.
+2025-10-12 00:41:00,404 INFO Started watching C:\Moe\Dokumenti\Radni nalozi\Zagreb\Petrova
+2025-10-12 00:41:16,852 INFO New xlsx detected: C:\Moe\Dokumenti\Radni nalozi\Zagreb\Petrova\Vortex + Anesteziologija 5319 preventivni - C - Copy.xlsx
+2025-10-12 00:41:16,854 WARNING File C:\Moe\Dokumenti\Radni nalozi\Zagreb\Petrova\Vortex + Anesteziologija 5319 preventivni - C - Copy.xlsx locked; retrying (1/5)...
+2025-10-12 00:41:17,907 INFO Extracted RN=0163/2025, date=10.10.2025.
+2025-10-12 00:41:19,506 INFO Current server number: 165
+2025-10-12 00:41:19,507 INFO Waiting for user confirmation...
+2025-10-12 00:41:19,507 INFO Waiting for user confirmation...
+2025-10-12 00:41:20,370 INFO Sent Telegram info message (waiting for user reply...)
+2025-10-12 00:41:33,354 INFO Sent Telegram info message
+2025-10-12 00:41:33,355 INFO User confirmed, proceeding with file upload.
+2025-10-12 00:41:34,196 INFO Uploaded temp_number.txt to FTP as /public_html/MMrnals/data.txt
+2025-10-12 00:41:58,981 INFO New xlsx detected: C:\Moe\Dokumenti\Radni nalozi\Zagreb\Petrova\Vortex + Anesteziologija 5319 preventivni - Copy.xlsx
+2025-10-12 00:41:58,983 WARNING File C:\Moe\Dokumenti\Radni nalozi\Zagreb\Petrova\Vortex + Anesteziologija 5319 preventivni - Copy.xlsx locked; retrying (1/5)...
+2025-10-12 00:42:00,017 INFO Extracted RN=0165/2025, date=10.10.2025.
+2025-10-12 00:42:02,343 INFO Current server number: 163
+2025-10-12 00:42:02,346 INFO Waiting for user confirmation...
+2025-10-12 00:42:02,346 INFO User confirmed, proceeding with file upload.
+2025-10-12 00:42:03,758 INFO Uploaded temp_number.txt to FTP as /public_html/MMrnals/data.txt
+2025-10-12 00:42:54,322 INFO New xlsx detected: C:\Moe\Dokumenti\Radni nalozi\Zagreb\Petrova\Vortex + Anesteziologija 5319 preventivni - C - Copy - Copy.xlsx
+2025-10-12 00:42:54,325 WARNING File C:\Moe\Dokumenti\Radni nalozi\Zagreb\Petrova\Vortex + Anesteziologija 5319 preventivni - C - Copy - Copy.xlsx locked; retrying (1/5)...
+2025-10-12 00:42:55,368 INFO Extracted RN=0163/2025, date=10.10.2025.
+2025-10-12 00:42:57,185 INFO Current server number: 165
+2025-10-12 00:42:57,187 INFO Waiting for user confirmation...
+2025-10-12 00:42:57,188 INFO Waiting for user confirmation...
+2025-10-12 00:42:58,030 INFO Sent Telegram info message (waiting for user reply...)
+2025-10-12 00:43:08,040 INFO Sent Telegram info message
+2025-10-12 00:43:08,042 INFO File processing was cancelled or timed out.
+2025-10-12 00:43:08,360 INFO Sent Telegram info message
+2025-10-12 00:43:20,330 INFO Shutdown complete.
+2025-10-13 13:03:40,994 INFO Started watching C:\Moe\Dokumenti\Radni nalozi\Zagreb\Petrova
+2025-10-13 13:03:47,649 INFO Shutdown complete.
+2025-10-13 13:04:14,657 INFO Started watching C:\Moe\Dokumenti\Radni nalozi
+2025-10-13 13:04:37,943 INFO New xlsx detected: C:\Moe\Dokumenti\Radni nalozi\Split\Firule Vortex+ OHBP 5565 Zamjena plovka.xlsx
+2025-10-13 13:04:37,944 WARNING File C:\Moe\Dokumenti\Radni nalozi\Split\Firule Vortex+ OHBP 5565 Zamjena plovka.xlsx locked; retrying (1/5)...
+2025-10-13 13:04:38,983 INFO Extracted RN=166/2025, date=14.10.2025.
+2025-10-13 13:04:39,924 INFO Current server number: 165
+2025-10-13 13:04:39,925 INFO Waiting for user confirmation...
+2025-10-13 13:04:39,925 INFO User confirmed, proceeding with file upload.
+2025-10-13 13:04:40,525 INFO Uploaded temp_number.txt to FTP as /public_html/MMrnals/data.txt
+2025-10-13 13:04:42,673 WARNING Telegram sendMessage failed: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot8044673999:AAGu3gkMTmo0iELeC8xknM4HqTlfiiRvULY/sendMessage (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000002222AA763C0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-10-13 13:04:44,919 INFO Shutdown complete.
+2025-10-15 10:48:08,897 INFO Started watching C:\Moe\Dokumenti\Radni nalozi
+2025-10-15 10:48:22,069 INFO New xlsx detected: C:\Moe\Dokumenti\Radni nalozi\Split\Firule Vortex+ OHBP 5565 Zamjena plovka.xlsx
+2025-10-15 10:48:22,081 INFO New xlsx detected: C:\Moe\Dokumenti\Radni nalozi\Split\Firule Vortex+ OHBP 6680 Zamjena plovka.xlsx
+2025-10-15 10:48:22,187 INFO Extracted RN=166/2025, date=14.10.2025.
+2025-10-15 10:48:22,187 INFO Extracted RN=167/2025, date=14.10.2025.
+2025-10-15 10:48:23,668 INFO Current server number: 165
+2025-10-15 10:48:23,669 INFO Waiting for user confirmation...
+2025-10-15 10:48:23,670 INFO User confirmed, proceeding with file upload.
+2025-10-15 10:48:23,753 INFO Current server number: 165
+2025-10-15 10:48:23,754 INFO Waiting for user confirmation...
+2025-10-15 10:48:23,755 INFO User confirmed, proceeding with file upload.
+2025-10-15 10:48:24,414 INFO Uploaded temp_number.txt to FTP as /public_html/MMrnals/data.txt
+2025-10-15 10:48:24,465 INFO Uploaded temp_number.txt to FTP as /public_html/MMrnals/data.txt
+2025-10-15 10:48:26,852 WARNING Telegram sendMessage failed: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot8044673999:AAGu3gkMTmo0iELeC8xknM4HqTlfiiRvULY/sendMessage (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x00000134FD325940>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-10-15 10:48:26,852 WARNING Telegram sendMessage failed: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot8044673999:AAGu3gkMTmo0iELeC8xknM4HqTlfiiRvULY/sendMessage (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x00000134FD32CCD0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-10-15 10:50:36,815 INFO New xlsx detected: C:\Moe\Dokumenti\Radni nalozi\Split\Firule Vortex+ OHBP 6680 Zamjena plovka.xlsx
+2025-10-15 10:50:36,862 INFO Extracted RN=167/2025, date=14.10.2025.
+2025-10-15 10:50:37,754 INFO Current server number: 166
+2025-10-15 10:50:37,755 INFO Waiting for user confirmation...
+2025-10-15 10:50:37,756 INFO User confirmed, proceeding with file upload.
+2025-10-15 10:50:38,535 INFO Uploaded temp_number.txt to FTP as /public_html/MMrnals/data.txt
+2025-10-15 10:50:40,604 WARNING Telegram sendMessage failed: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot8044673999:AAGu3gkMTmo0iELeC8xknM4HqTlfiiRvULY/sendMessage (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x00000134FD32D1D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-10-17 09:06:39,643 INFO Started watching C:\Moe\Dokumenti\Radni nalozi
+2025-10-17 09:07:05,896 INFO New xlsx detected: C:\Moe\Dokumenti\Radni nalozi\Zagreb\Dubrava ECMOLIFE senzor zamijenjen.xlsx
+2025-10-17 09:07:06,047 INFO Extracted RN=168/2025, date=16.10.2025.
+2025-10-17 09:07:10,987 INFO Current server number: 167
+2025-10-17 09:07:10,988 INFO Waiting for user confirmation...
+2025-10-17 09:07:10,989 INFO User confirmed, proceeding with file upload.
+2025-10-17 09:07:11,630 INFO Uploaded temp_number.txt to FTP as /public_html/MMrnals/data.txt
+2025-10-17 09:07:14,154 WARNING Telegram sendMessage failed: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot8044673999:AAGu3gkMTmo0iELeC8xknM4HqTlfiiRvULY/sendMessage (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000002327BDC5E80>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-08 01:15:38,014 INFO Started watching C:\Moe\Dokumenti\Radni nalozi
+2025-11-08 01:16:50,753 INFO New xlsx detected: C:\Moe\Dokumenti\Radni nalozi\Split\RN 0173 2025 Split Krizine Acist zamjena napajanja .xlsx
+2025-11-08 01:16:50,834 INFO Extracted RN=172/2025, date=4.11.2025.
+2025-11-08 01:16:52,023 INFO Current server number: 174
+2025-11-08 01:16:52,025 INFO Waiting for user confirmation...
+2025-11-08 01:16:52,026 INFO Waiting for user confirmation...
+2025-11-08 01:16:52,857 INFO Sent Telegram info message (waiting for user reply...)
+2025-11-08 01:17:35,591 INFO Sent Telegram info message
+2025-11-08 01:17:35,594 INFO User confirmed, proceeding with file upload.
+2025-11-08 01:17:36,157 INFO Uploaded temp_number.txt to FTP as /public_html/MMrnals/data.txt
+2025-11-08 01:17:54,004 INFO New xlsx detected: C:\Moe\Dokumenti\Radni nalozi\Zagreb\Jordanovac\RN 0172 2025 Jordanovac Edukacija.xlsx
+2025-11-08 01:17:54,082 INFO Extracted RN=172/2025, date=27.10.2025.
+2025-11-08 01:17:55,017 INFO Current server number: 172
+2025-11-08 01:17:55,019 INFO Waiting for user confirmation...
+2025-11-08 01:17:55,020 INFO Waiting for user confirmation...
+2025-11-08 01:17:55,473 INFO Sent Telegram info message (waiting for user reply...)
+2025-11-08 01:18:09,538 INFO Sent Telegram info message
+2025-11-08 01:18:09,540 INFO File processing was cancelled or timed out.
+2025-11-08 01:18:09,769 INFO Sent Telegram info message
+2025-11-08 01:18:22,911 INFO New xlsx detected: C:\Moe\Dokumenti\Radni nalozi\MM\RN 0171 2025 MM Ulrich trening pacijent linija.xlsx
+2025-11-08 01:18:22,993 INFO Extracted RN=171/2025, date=30.10.2025.
+2025-11-08 01:18:23,932 INFO Current server number: 172
+2025-11-08 01:18:23,933 INFO Waiting for user confirmation...
+2025-11-08 01:18:23,934 INFO Waiting for user confirmation...
+2025-11-08 01:18:24,351 INFO Sent Telegram info message (waiting for user reply...)
+2025-11-08 01:18:34,513 INFO Sent Telegram info message
+2025-11-08 01:18:34,513 INFO File processing was cancelled or timed out.
+2025-11-08 01:18:34,732 INFO Sent Telegram info message
+2025-11-08 01:18:43,265 INFO New xlsx detected: C:\Moe\Dokumenti\Radni nalozi\Pula\RN 0174 2025 Pula Acist CVi zamjena napajanja PS 524403 005.xlsx
+2025-11-08 01:18:43,266 WARNING File C:\Moe\Dokumenti\Radni nalozi\Pula\RN 0174 2025 Pula Acist CVi zamjena napajanja PS 524403 005.xlsx locked; retrying (1/5)...
+2025-11-08 01:18:44,344 INFO Extracted RN=174/2025, date=7.11.2025.
+2025-11-08 01:18:45,643 INFO Current server number: 172
+2025-11-08 01:18:45,646 INFO Waiting for user confirmation...
+2025-11-08 01:18:45,647 INFO User confirmed, proceeding with file upload.
+2025-11-08 01:18:46,879 INFO Uploaded temp_number.txt to FTP as /public_html/MMrnals/data.txt
+2025-11-08 01:27:10,965 INFO Shutdown complete.
+2025-11-08 01:28:45,538 INFO Started watching C:\Moe\Dokumenti\Radni nalozi
+2025-11-08 01:28:52,223 INFO New xlsx detected: C:\Moe\Dokumenti\Radni nalozi\Pula\RN 0174 2025 Pula Acist CVi zamjena napajanja PS 524403 005.xlsx
+2025-11-08 01:28:52,304 INFO Extracted RN=174/2025, date=7.11.2025.
+2025-11-08 01:28:53,237 INFO Current server number: 173
+2025-11-08 01:28:53,239 INFO Waiting for user confirmation...
+2025-11-08 01:28:53,239 INFO User confirmed, proceeding with file upload.
+2025-11-08 01:28:54,753 INFO Uploaded temp_number.txt to FTP as /public_html/MMrnals/data.txt
+2025-11-08 01:30:32,347 INFO Shutdown complete.
+2025-11-08 01:30:35,471 INFO Started watching C:\Moe\Dokumenti\Radni nalozi
+2025-11-08 01:30:45,562 INFO New xlsx detected: C:\Moe\Dokumenti\Radni nalozi\Pula\RN 0174 2025 Pula Acist CVi zamjena napajanja PS 524403 005.xlsx
+2025-11-08 01:30:45,656 INFO Extracted RN=174/2025, date=7.11.2025.
+2025-11-08 01:30:47,129 INFO Current server number: 174
+2025-11-08 01:30:47,131 INFO Waiting for user confirmation...
+2025-11-08 01:30:47,131 INFO Waiting for user confirmation...
+2025-11-08 01:30:47,394 INFO Sent Telegram info message (waiting for user reply...)
+2025-11-08 01:31:01,891 INFO Sent Telegram info message
+2025-11-08 01:31:01,892 INFO User confirmed, proceeding with file upload.
+2025-11-08 01:31:02,405 INFO Uploaded temp_number.txt to FTP as /public_html/MMrnals/data.txt
+2025-11-08 01:32:42,820 INFO Shutdown complete.
+2025-11-08 01:32:45,888 INFO Started watching C:\Moe\Dokumenti\Radni nalozi
+2025-11-08 01:32:55,613 INFO New xlsx detected: C:\Moe\Dokumenti\Radni nalozi\Pula\RN 0174 2025 Pula Acist CVi zamjena napajanja PS 524403 005.xlsx
+2025-11-08 01:32:55,692 INFO Extracted RN=174/2025, date=7.11.2025.
+2025-11-08 01:32:56,787 INFO Current server number: 174
+2025-11-08 01:32:56,789 INFO Waiting for user confirmation...
+2025-11-08 01:32:56,789 INFO Waiting for user confirmation...
+2025-11-08 01:32:57,357 INFO Sent Telegram info message (waiting for user reply...)
+2025-11-08 01:33:09,184 INFO Sent Telegram info message
+2025-11-08 01:33:09,185 INFO User confirmed, proceeding with file upload.
+2025-11-08 01:33:09,685 INFO Uploaded temp_number.txt to FTP as /public_html/MMrnals/data.txt
+2025-11-08 01:35:51,274 INFO Shutdown complete.
