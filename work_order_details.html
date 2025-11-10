@@ -1,0 +1,28 @@
+
+<div class="container mt-4">
+  <h4>Detalji radnog naloga</h4>
+  <table class="table table-striped mt-3">
+    <tr>
+        <th>Radni nalog</th>
+        <td>175/2025 <button onclick="copyToClipboard('175/2025')">📋</button></td>
+    </tr>
+    <tr><th>Partner</th><td>KBC Rijeka</td></tr>
+    <tr><th>Aparat</th><td>CT Motion Spicy</td></tr>
+    <tr><th>Serijski broj</th><td>CTM2426941</td></tr>
+    <tr><th>Šifra aparata</th><td>XD8000</td></tr>
+    <tr><th>Opis pogreške</th><td>Jako blijed prikaz na display-u injektora zbog čega se jako slabo vide ispisane vrijednosti.</td></tr>
+    <tr>
+        <th>Datum</th>
+        <td>7.11.2025. <button onclick="copyToClipboard('7.11.2025.')">📋</button></td>
+    </tr>
+  </table>
+</div>
+<script>
+function copyToClipboard(text) {
+  navigator.clipboard.writeText(text).then(function() {
+    console.log('Copying to clipboard was successful!');
+  }, function(err) {
+    console.error('Could not copy text: ', err);
+  });
+}
+</script>
