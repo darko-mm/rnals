@@ -136,15 +136,6 @@ def generate_details_html(data, output_path="work_order_details.html"):
     </tr>
   </table>
 </div>
-<script>
-function copyToClipboard(text) {{
-  navigator.clipboard.writeText(text).then(function() {{
-    console.log('Copying to clipboard was successful!');
-  }}, function(err) {{
-    console.error('Could not copy text: ', err);
-  }});
-}}
-</script>
 """
     with open(output_path, "w", encoding="utf-8") as f:
         f.write(html_content)
