@@ -11,12 +11,12 @@ import openpyxl
 from datetime import datetime
 from pathlib import Path
 from ftp_utils import get_current_number_from_ftp, upload_files_to_ftp
-from telegram_utils import (
-    send_info_message,
-    send_success_message,
-    send_error_message,
-    ask_confirmation_and_wait,
-)
+# from telegram_utils import (
+#     send_info_message,
+#     send_success_message,
+#     send_error_message,
+#     ask_confirmation_and_wait,
+# )
 
 LOG_DIR = Path("logs")
 LOG_DIR.mkdir(exist_ok=True)
@@ -168,37 +168,37 @@ def process_file(file_path, ftp_config, bot_token, chat_id):
         try:
             broj_novi = int(str(radni_nalog).split("/")[0].strip())
         except Exception:
-            send_error_message("Ne mogu parsirati broj radnog naloga", file_path, bot_token, chat_id)
+            # send_error_message("Ne mogu parsirati broj radnog naloga", file_path, bot_token, chat_id)
             return
 
         logging.info("Waiting for user confirmation...")
 
-        waiting_for_reply = False
-        if server_num is not None and broj_novi <= server_num:
-            waiting_for_reply = True
-            logging.info("Waiting for user confirmation...")
-            send_info_message(
-                f"ℹ️ Čekam korisničku potvrdu za RN: {broj_novi} (na serveru je: {server_num})",
-                bot_token,
-                chat_id,
-                waiting=True,
-            )
-            confirmed = ask_confirmation_and_wait(
-                bot_token,
-                chat_id,
-                broj_novi=broj_novi,
-                broj_stari=server_num,
-                timeout_seconds=300,
-            )
-            if not confirmed:
-                logging.info("File processing was cancelled or timed out.")
-                send_info_message(
-                    f"❌ Obrada datoteke {file_path} otkazana od strane korisnika ili je isteklo vrijeme.",
-                    bot_token,
-                    chat_id,
-                    waiting=False,
-                )
-                return
+        # waiting_for_reply = False
+        # if server_num is not None and broj_novi <= server_num:
+        #     waiting_for_reply = True
+        #     logging.info("Waiting for user confirmation...")
+        #     send_info_message(
+        #         f"ℹ️ Čekam korisničku potvrdu za RN: {broj_novi} (na serveru je: {server_num})",
+        #         bot_token,
+        #         chat_id,
+        #         waiting=True,
+        #     )
+        #     confirmed = ask_confirmation_and_wait(
+        #         bot_token,
+        #         chat_id,
+        #         broj_novi=broj_novi,
+        #         broj_stari=server_num,
+        #         timeout_seconds=300,
+        #     )
+        #     if not confirmed:
+        #         logging.info("File processing was cancelled or timed out.")
+        #         send_info_message(
+        #             f"❌ Obrada datoteke {file_path} otkazana od strane korisnika ili je isteklo vrijeme.",
+        #             bot_token,
+        #             chat_id,
+        #             waiting=False,
+        #         )
+        #         return
 
         # Proceed if confirmed
         logging.info("User confirmed, proceeding with file upload.")
@@ -213,8 +213,8 @@ def process_file(file_path, ftp_config, bot_token, chat_id):
         upload_files_to_ftp(ftp_config, files_to_upload)
 
         log_data(file_path, radni_nalog, datum)
-        send_success_message(file_path, radni_nalog, datum, bot_token, chat_id)
+        # send_success_message(file_path, radni_nalog, datum, bot_token, chat_id)
 
     except Exception as e:
         logging.exception("Error processing file %s: %s", file_path, e)
-        send_error_message(str(e), file_path, bot_token, chat_id)
+        # send_error_message(str(e), file_path, bot_token, chat_id)
