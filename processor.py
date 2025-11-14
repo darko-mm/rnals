@@ -10,7 +10,7 @@ import logging
 import openpyxl
 from datetime import datetime
 from pathlib import Path
-from ftp_utils import get_current_number_from_ftp, upload_temp_file_to_ftp
+from ftp_utils import get_current_number_from_ftp, upload_files_to_ftp
 from telegram_utils import (
     send_info_message,
     send_success_message,
@@ -78,25 +78,87 @@ def safe_load_excel(path, attempts=5, wait=1.0):
     raise last_exc
 
 
-def parse_cells(wb):
-    sheet = wb.active
-    rn = sheet["C6"].value
-    datum_val = sheet["C35"].value
-    if rn is None:
-        raise ValueError("C6 (radni nalog) is empty")
-    if datum_val is None:
-        raise ValueError("C35 (datum) is empty")
-    if isinstance(datum_val, datetime):
-        datum = datum_val.strftime("%d.%m.%Y")
-    else:
-        datum = str(datum_val)
-    return str(rn), datum
+def parse_excel(file_path):
+    """
+    Parses the Excel file and extracts the required data.
+    """
+    try:
+        workbook = safe_load_excel(file_path)
+        sheet = workbook.active
+
+        # Extract all the required data
+        work_order_number = sheet["C6"].value
+        partner = sheet["B7"].value
+        aparat = sheet["B12"].value
+        serijski_broj = sheet["E12"].value
+        sifra_aparata = sheet["B13"].value
+        opis_pogreske = sheet["B16"].value
+        datum = sheet["E6"].value
+
+        return {
+            "work_order_number": work_order_number,
+            "partner": partner,
+            "aparat": aparat,
+            "serijski_broj": serijski_broj,
+            "sifra_aparata": sifra_aparata,
+            "opis_pogreske": opis_pogreske,
+            "datum": datum,
+        }
+
+    except FileNotFoundError:
+        logging.error(f"Error: The file at {file_path} was not found.")
+        return None
+    except Exception as e:
+        logging.error(f"An error occurred: {e}")
+        return None
+
+
+def generate_details_html(data, output_path="work_order_details.html"):
+    """
+    Generates an HTML file with the work order details.
+    """
+    html_content = f"""
+<div class="container mt-4">
+  <h4>Detalji radnog naloga</h4>
+  <table class="table table-striped mt-3">
+    <tr>
+        <th>Radni nalog</th>
+        <td>{data['work_order_number']} <button onclick="copyToClipboard('{data['work_order_number']}')">📋</button></td>
+    </tr>
+    <tr><th>Partner</th><td>{data['partner']}</td></tr>
+    <tr><th>Aparat</th><td>{data['aparat']}</td></tr>
+    <tr><th>Serijski broj</th><td>{data['serijski_broj']}</td></tr>
+    <tr><th>Šifra aparata</th><td>{data['sifra_aparata']}</td></tr>
+    <tr><th>Opis pogreške</th><td>{data['opis_pogreske']}</td></tr>
+    <tr>
+        <th>Datum</th>
+        <td>{data['datum']} <button onclick="copyToClipboard('{data['datum']}')">📋</button></td>
+    </tr>
+  </table>
+</div>
+<script>
+function copyToClipboard(text) {{
+  navigator.clipboard.writeText(text).then(function() {{
+    console.log('Copying to clipboard was successful!');
+  }}, function(err) {{
+    console.error('Could not copy text: ', err);
+  }});
+}}
+</script>
+"""
+    with open(output_path, "w", encoding="utf-8") as f:
+        f.write(html_content)
+    logging.info(f"Generated {output_path}")
 
 
 def process_file(file_path, ftp_config, bot_token, chat_id):
     try:
-        wb = safe_load_excel(file_path)
-        radni_nalog, datum = parse_cells(wb)
+        excel_data = parse_excel(file_path)
+        if not excel_data:
+            raise ValueError("Could not parse Excel file.")
+
+        radni_nalog = excel_data["work_order_number"]
+        datum = excel_data["datum"]
         logging.info("Extracted RN=%s, date=%s", radni_nalog, datum)
 
         # always override FTP remote file name to data.txt
@@ -141,10 +203,18 @@ def process_file(file_path, ftp_config, bot_token, chat_id):
         # Proceed if confirmed
         logging.info("User confirmed, proceeding with file upload.")
         save_temp_number(radni_nalog, datum)
-        upload_temp_file_to_ftp(ftp_config, Path("temp_number.txt"))
+        generate_details_html(excel_data)
+
+        files_to_upload = [
+            {"local_path": Path("temp_number.txt"), "remote_name": "data.txt"},
+            {"local_path": Path("work_order_details.html"), "remote_name": "work_order_details.html"}
+        ]
+
+        upload_files_to_ftp(ftp_config, files_to_upload)
+
         log_data(file_path, radni_nalog, datum)
         send_success_message(file_path, radni_nalog, datum, bot_token, chat_id)
-        
+
     except Exception as e:
         logging.exception("Error processing file %s: %s", file_path, e)
         send_error_message(str(e), file_path, bot_token, chat_id)
