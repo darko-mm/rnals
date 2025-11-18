@@ -41,12 +41,11 @@ def get_current_number_from_ftp(ftp_config, retries=3, wait=1.0):
     logging.error("FTP get failed after retries: %s", last_exc)
     return None
 
-def upload_temp_file_to_ftp(ftp_config, local_path: Path, retries=3, wait=1.0):
+def upload_files_to_ftp(ftp_config, files_to_upload, retries=3, wait=1.0):
     host = ftp_config.get("host")
     user = ftp_config.get("user")
     passwd = ftp_config.get("passwd")
     remote_dir = ftp_config.get("remote_dir")
-    remote_file = ftp_config.get("remote_file")
     last_exc = None
     for attempt in range(retries):
         try:
@@ -54,10 +53,13 @@ def upload_temp_file_to_ftp(ftp_config, local_path: Path, retries=3, wait=1.0):
             ftp.login(user, passwd)
             if remote_dir:
                 ftp.cwd(remote_dir)
-            with open(local_path, "rb") as f:
-                ftp.storbinary(f"STOR {remote_file}", f)
+            for file_info in files_to_upload:
+                local_path = file_info["local_path"]
+                remote_name = file_info["remote_name"]
+                with open(local_path, "rb") as f:
+                    ftp.storbinary(f"STOR {remote_name}", f)
+                logging.info("Uploaded %s to FTP as %s/%s", local_path, remote_dir, remote_name)
             ftp.quit()
-            logging.info("Uploaded %s to FTP as %s/%s", local_path, remote_dir, remote_file)
             return True
         except Exception as e:
             last_exc = e
