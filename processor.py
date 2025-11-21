@@ -96,6 +96,11 @@ def parse_excel(file_path):
         opis_obavljenog_posla = sheet["A19"].value
         datum = sheet["E6"].value
 
+        # Extract checkbox data
+        checkbox_labels = [sheet[f"{col}1"].value for col in "ABCDEF"]
+        checkbox_values = [sheet[f"{col}2"].value for col in "ABCDEF"]
+        checked_items = [label for label, value in zip(checkbox_labels, checkbox_values) if value]
+
         return {
             "work_order_number": work_order_number,
             "partner": partner,
@@ -104,6 +109,7 @@ def parse_excel(file_path):
             "sifra_aparata": sifra_aparata,
             "opis_pogreske": opis_pogreske,
             "opis_obavljenog_posla": opis_obavljenog_posla,
+            "checked_items": checked_items,
             "datum": datum,
         }
 
@@ -133,6 +139,7 @@ def generate_details_html(data, output_path="work_order_details.html"):
     <tr><th>Šifra aparata</th><td>{data['sifra_aparata']}</td></tr>
     <tr><th>Opis pogreške</th><td>{data['opis_pogreske']}</td></tr>
     <tr><th>Opis obavljenog posla</th><td>{data['opis_obavljenog_posla']}</td></tr>
+    <tr><th>Vrsta posla</th><td>{", ".join(data['checked_items'])}</td></tr>
     <tr>
         <th>Datum</th>
         <td>{data['datum']} <button onclick="copyToClipboard('{data['datum']}')">📋</button></td>
