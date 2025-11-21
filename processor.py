@@ -93,6 +93,7 @@ def parse_excel(file_path):
         serijski_broj = sheet["E12"].value
         sifra_aparata = sheet["B13"].value
         opis_pogreske = sheet["B16"].value
+        opis_obavljenog_posla = sheet["A19"].value
         datum = sheet["E6"].value
 
         return {
@@ -102,6 +103,7 @@ def parse_excel(file_path):
             "serijski_broj": serijski_broj,
             "sifra_aparata": sifra_aparata,
             "opis_pogreske": opis_pogreske,
+            "opis_obavljenog_posla": opis_obavljenog_posla,
             "datum": datum,
         }
 
@@ -130,6 +132,7 @@ def generate_details_html(data, output_path="work_order_details.html"):
     <tr><th>Serijski broj</th><td>{data['serijski_broj']}</td></tr>
     <tr><th>Šifra aparata</th><td>{data['sifra_aparata']}</td></tr>
     <tr><th>Opis pogreške</th><td>{data['opis_pogreske']}</td></tr>
+    <tr><th>Opis obavljenog posla</th><td>{data['opis_obavljenog_posla']}</td></tr>
     <tr>
         <th>Datum</th>
         <td>{data['datum']} <button onclick="copyToClipboard('{data['datum']}')">📋</button></td>
