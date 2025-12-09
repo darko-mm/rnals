@@ -29,7 +29,8 @@ class ExcelCreatedHandler(FileSystemEventHandler):
                                  event.src_path,
                                  ftp_config=self.ftp_config,
                                  bot_token=self.bot_token,
-                                 chat_id=self.chat_id)
+                                 chat_id=self.chat_id,
+                                 watched_folder=self.folder)
 
 class WatchService:
     def __init__(self, folders_to_watch, bot_token, chat_id, ftp_config, max_workers=4):
