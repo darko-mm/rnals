@@ -9,6 +9,7 @@ from watchdog.events import FileSystemEventHandler
 from concurrent.futures import ThreadPoolExecutor
 import time
 import logging
+import os
 from processor import process_file
 
 class ExcelCreatedHandler(FileSystemEventHandler):
@@ -22,6 +23,12 @@ class ExcelCreatedHandler(FileSystemEventHandler):
     def on_created(self, event):
         if event.is_directory:
             return
+
+        # --- Ignore temporary and log files ---
+        file_name = os.path.basename(event.src_path)
+        if file_name.startswith("~") or file_name.startswith("Lista radni nalozi"):
+            return
+
         if event.src_path.lower().endswith(".xlsx"):
             logging.info("New xlsx detected: %s", event.src_path)
             # submit for background processing
