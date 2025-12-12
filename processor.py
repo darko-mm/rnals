@@ -11,6 +11,7 @@ import openpyxl
 from datetime import datetime
 from pathlib import Path
 from ftp_utils import get_current_number_from_ftp, upload_files_to_ftp
+from logging_utils import log_to_csv, log_to_excel
 # from telegram_utils import (
 #     send_info_message,
 #     send_success_message,
@@ -25,11 +26,6 @@ LOG_DIR.mkdir(exist_ok=True)
 def get_log_file():
     now = datetime.now()
     return LOG_DIR / f"log_{now.strftime('%m')}_{now.year}.txt"
-
-
-def log_data(file_name, radni_nalog, datum):
-    with get_log_file().open("a", encoding="utf-8") as f:
-        f.write(f"{datetime.now().isoformat()} Processed: {file_name}, RN: {radni_nalog}, Date: {datum}\n")
 
 
 def save_temp_number(radni_nalog, datum, path=Path("temp_number.txt")):
@@ -92,8 +88,11 @@ def parse_excel(file_path):
         aparat = sheet["B12"].value
         serijski_broj = sheet["E12"].value
         sifra_aparata = sheet["B13"].value
+        verzija_sw = sheet["E13"].value
+        sifra_pogreske = sheet["A16"].value
         opis_pogreske = sheet["B16"].value
         opis_obavljenog_posla = sheet["A19"].value
+        serviser = sheet["A35"].value
         datum = sheet["E6"].value
 
         # Extract checkbox data
@@ -101,23 +100,49 @@ def parse_excel(file_path):
         checkbox_values = [sheet[f"{col}2"].value for col in "ABCDEF"]
         checked_items = [label for label, value in zip(checkbox_labels, checkbox_values) if value]
 
+        # --- Extract Potrošni materijal (Consumables) ---
+        consumables_list = []
+        for row in range(27, 32):  # A27 to I31
+            # Since B-F is merged, the value is in B
+            opis = sheet[f"B{row}"].value
+            if opis:  # Only process if there's a description
+                kataloski_broj = sheet[f"A{row}"].value
+                lot = sheet[f"G{row}"].value
+                kolicina = sheet[f"H{row}"].value
+                dostavnica = sheet[f"I{row}"].value
+
+                # Format into a descriptive string
+                consumable_str = (
+                    f"{kataloski_broj or ''} | {opis or ''} | "
+                    f"LOT: {lot or 'None'} | Količina: {kolicina or 'None'} | "
+                    f"Dostavnica: {dostavnica or 'None'}"
+                )
+                consumables_list.append(consumable_str)
+
+        potrosni_materijal = "\n".join(consumables_list)
+
         return {
             "work_order_number": work_order_number,
             "partner": partner,
             "aparat": aparat,
             "serijski_broj": serijski_broj,
             "sifra_aparata": sifra_aparata,
+            "verzija_sw": verzija_sw,
+            "sifra_pogreske": sifra_pogreske,
             "opis_pogreske": opis_pogreske,
             "opis_obavljenog_posla": opis_obavljenog_posla,
-            "checked_items": checked_items,
+            "serviser": serviser,
             "datum": datum,
+            "potrosni_materijal": potrosni_materijal,
+            "checked_items": checked_items,
+            "izvorna_datoteka": str(file_path),
         }
 
     except FileNotFoundError:
         logging.error(f"Error: The file at {file_path} was not found.")
         return None
     except Exception as e:
-        logging.error(f"An error occurred: {e}")
+        logging.error(f"An error occurred while parsing {file_path}: {e}")
         return None
 
 
@@ -152,7 +177,7 @@ def generate_details_html(data, output_path="work_order_details.html"):
     logging.info(f"Generated {output_path}")
 
 
-def process_file(file_path, ftp_config, bot_token, chat_id):
+def process_file(file_path, ftp_config, bot_token, chat_id, watched_folder):
     try:
         excel_data = parse_excel(file_path)
         if not excel_data:
@@ -213,7 +238,9 @@ def process_file(file_path, ftp_config, bot_token, chat_id):
 
         upload_files_to_ftp(ftp_config, files_to_upload)
 
-        log_data(file_path, radni_nalog, datum)
+        # --- New Logging ---
+        log_to_csv(excel_data, watched_folder)
+        log_to_excel(excel_data, watched_folder)
         # send_success_message(file_path, radni_nalog, datum, bot_token, chat_id)
 
     except Exception as e:
