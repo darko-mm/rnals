@@ -6,6 +6,7 @@ Handles logging of processed work orders to CSV and XLSX files.
 """
 import csv
 import openpyxl
+import logging
 from datetime import datetime
 from pathlib import Path
 
@@ -55,8 +56,7 @@ def log_to_csv(data, watched_folder):
             writer.writerow(row_data)
 
     except Exception as e:
-        # In a real-world scenario, you'd want better error handling
-        print(f"Error logging to CSV: {e}")
+        logging.error(f"Error logging to CSV: {e}")
 
 
 # --- XLSX Logging ---
@@ -109,4 +109,4 @@ def log_to_excel(data, watched_folder):
         workbook.save(xlsx_filepath)
 
     except Exception as e:
-        print(f"Error logging to XLSX: {e}")
+        logging.error(f"Error logging to XLSX: {e}")
